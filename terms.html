@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms of Service — Vestia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #1a1a18;
+      --surface: #222220;
+      --border: #2e2e2b;
+      --accent: #6b9e6b;
+      --text-primary: #f0ebe0;
+      --text-secondary: #8a8678;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--text-primary);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-back {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-back:hover { color: var(--accent); }
+
+    .hero {
+      padding: 80px 48px 48px;
+      border-bottom: 1px solid var(--border);
+      max-width: 800px;
+    }
+
+    .hero-label {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--text-primary);
+      margin-bottom: 20px;
+    }
+
+    .hero-date {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .content-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 64px 48px 120px;
+    }
+
+    .policy h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--text-primary);
+      margin: 56px 0 16px;
+      padding-top: 56px;
+      border-top: 1px solid var(--border);
+    }
+
+    .policy h2:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .policy p {
+      color: #b8b2a4;
+      margin-bottom: 16px;
+    }
+
+    .policy ul {
+      list-style: none;
+      margin: 12px 0 20px 0;
+    }
+
+    .policy ul li {
+      color: #b8b2a4;
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    .policy ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 12px;
+    }
+
+    .policy a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .policy a:hover { border-bottom-color: var(--accent); }
+
+    .policy strong { color: var(--text-primary); font-weight: 500; }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin: 24px 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      margin-top: 24px;
+    }
+
+    .contact-card p {
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+
+    .contact-card a {
+      color: var(--accent);
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: var(--text-secondary);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .footer-copy a { color: inherit; }
+
+    @media (max-width: 640px) {
+      nav, .hero, .content-wrap, footer { padding-left: 24px; padding-right: 24px; }
+      .hero { padding-top: 48px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">Vestia</a>
+    <a href="/" class="nav-back">← Back to home</a>
+  </nav>
+
+  <div class="hero">
+    <p class="hero-label">Legal</p>
+    <h1>Terms of Service</h1>
+    <p class="hero-date">Last updated: March 13, 2026</p>
+  </div>
+
+  <div class="content-wrap">
+    <div class="policy">
+
+      <p>These Terms of Service ("Terms") govern your use of Vestia, an iOS wardrobe management application ("the App") operated by <strong>Kartveli Company LTD</strong> ("we," "us," or "our"), a company incorporated in Canada.</p>
+
+      <p>By downloading or using Vestia, you agree to these Terms. If you do not agree, do not use the App.</p>
+
+      <h2>1. Use of the App</h2>
+      <p>Vestia is a personal wardrobe management app that uses artificial intelligence to help you organise your clothing and generate outfit suggestions. You may use the App for personal, non-commercial purposes only.</p>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use the App for any unlawful purpose</li>
+        <li>Attempt to reverse engineer, copy, or distribute any part of the App</li>
+        <li>Use the App in any way that could damage, disable, or impair our services</li>
+        <li>Upload content that is offensive, illegal, or infringes on third-party rights</li>
+      </ul>
+
+      <h2>2. Subscriptions and Billing</h2>
+      <p>Vestia offers the following subscription plans:</p>
+      <ul>
+        <li><strong>Monthly</strong> — $5.99 per month</li>
+        <li><strong>Annual</strong> — $52.99 per year (billed once annually)</li>
+      </ul>
+      <p>All new subscribers receive a <strong>7-day free trial</strong>. You will not be charged during the trial period. At the end of the trial, your chosen subscription will begin automatically unless you cancel before the trial ends.</p>
+      <p>Subscriptions are managed through Apple's App Store and are subject to Apple's billing terms. Payment is charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period.</p>
+      <p>You can manage or cancel your subscription at any time in your device's App Store subscription settings.</p>
+
+      <h2>3. No Refunds</h2>
+      <div class="highlight-box">
+        <p><strong>All purchases are final. We do not offer refunds for subscription payments, including partial periods.</strong> If you believe you have been charged in error, please contact Apple Support directly, as all billing is processed by Apple.</p>
+      </div>
+      <p>If you cancel your subscription, you will retain access to Vestia Pro features until the end of your current billing period.</p>
+
+      <h2>4. Free Trial</h2>
+      <p>We offer a 7-day free trial for new subscribers. Only one free trial is available per Apple ID. We will send you a reminder notification one day before your trial ends. If you do not wish to continue, you must cancel before the trial period expires to avoid being charged.</p>
+
+      <h2>5. AI-Powered Features</h2>
+      <p>Vestia uses Anthropic's Claude API to power outfit generation, wardrobe tagging, and styling suggestions. AI-generated content is provided for informational and entertainment purposes. We do not guarantee the accuracy, suitability, or quality of AI-generated outfit suggestions.</p>
+      <p>Daily usage of AI features may be subject to limits to ensure fair access for all users.</p>
+
+      <h2>6. Your Content</h2>
+      <p>You retain ownership of all content you add to Vestia, including clothing photos and wardrobe data. This data is stored locally on your device. By using AI features, you grant us a limited licence to send relevant wardrobe descriptions and images to Anthropic's API solely for the purpose of generating outfit suggestions on your behalf.</p>
+      <p>We do not claim ownership of your wardrobe data and will not use it for any purpose beyond providing the service.</p>
+
+      <h2>7. Intellectual Property</h2>
+      <p>The Vestia app, including its design, code, branding, and AI-generated interface elements, is owned by Kartveli Company LTD. You may not copy, reproduce, distribute, or create derivative works from any part of the App without our express written permission.</p>
+
+      <h2>8. Disclaimer of Warranties</h2>
+      <p>Vestia is provided "as is" without warranties of any kind. We do not guarantee that the App will be error-free, uninterrupted, or that AI-generated suggestions will meet your expectations. We are not responsible for any decisions made based on AI outfit recommendations.</p>
+
+      <h2>9. Limitation of Liability</h2>
+      <p>To the maximum extent permitted by law, Kartveli Company LTD shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of Vestia. Our total liability to you shall not exceed the amount you paid for the App in the 12 months preceding the claim.</p>
+
+      <h2>10. Termination</h2>
+      <p>We reserve the right to suspend or terminate your access to Vestia at any time if you violate these Terms. You may stop using the App at any time by uninstalling it and cancelling your subscription.</p>
+
+      <h2>11. Changes to These Terms</h2>
+      <p>We may update these Terms from time to time. The updated version will be indicated by the "Last updated" date at the top of this page. Continued use of the App after changes constitutes acceptance of the updated Terms.</p>
+
+      <h2>12. Governing Law</h2>
+      <p>These Terms are governed by the laws of Canada. Any disputes shall be resolved in the courts of Canada, unless otherwise required by applicable consumer protection law in your jurisdiction.</p>
+
+      <h2>13. Contact Us</h2>
+      <div class="contact-card">
+        <p><strong>Kartveli Company LTD</strong></p>
+        <p>Canada</p>
+        <br>
+        <p>Email: <a href="mailto:support@appvestia.com">support@appvestia.com</a></p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <span class="footer-logo">Vestia</span>
+    <span class="footer-copy">© 2026 Kartveli Company LTD · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+  </footer>
+
+</body>
+</html>

@@ -27,7 +27,6 @@
       line-height: 1.8;
     }
 
-    /* NAV */
     nav {
       display: flex;
       justify-content: space-between;
@@ -55,7 +54,6 @@
 
     .nav-back:hover { color: var(--accent); }
 
-    /* HERO */
     .hero {
       padding: 80px 48px 48px;
       border-bottom: 1px solid var(--border);
@@ -84,14 +82,12 @@
       color: var(--text-secondary);
     }
 
-    /* LAYOUT */
     .content-wrap {
       max-width: 800px;
       margin: 0 auto;
       padding: 64px 48px 120px;
     }
 
-    /* POLICY CONTENT */
     .policy h2 {
       font-family: 'Playfair Display', serif;
       font-size: 22px;
@@ -148,9 +144,7 @@
       transition: border-color 0.2s;
     }
 
-    .policy a:hover {
-      border-bottom-color: var(--accent);
-    }
+    .policy a:hover { border-bottom-color: var(--accent); }
 
     .policy strong {
       color: var(--text-primary);
@@ -162,7 +156,6 @@
       font-style: italic;
     }
 
-    /* TABLE OF CONTENTS */
     .toc {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -206,7 +199,6 @@
 
     .toc ol li a:hover { color: var(--text-primary); }
 
-    /* DATA TABLE */
     .data-table {
       width: 100%;
       border-collapse: collapse;
@@ -255,7 +247,6 @@
       letter-spacing: 0.06em;
     }
 
-    /* CONTACT CARD */
     .contact-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -275,7 +266,6 @@
       text-decoration: none;
     }
 
-    /* FOOTER */
     footer {
       border-top: 1px solid var(--border);
       padding: 40px 48px;
@@ -313,7 +303,7 @@
   <div class="hero">
     <p class="hero-label">Legal</p>
     <h1>Privacy Policy</h1>
-    <p class="hero-date">Last updated: March 13, 2026</p>
+    <p class="hero-date">Last updated: April 30, 2026</p>
   </div>
 
   <div class="content-wrap">
@@ -349,17 +339,16 @@
       <h3>Personal information you provide directly</h3>
       <p>We collect personal information that you voluntarily provide when you use our services or contact us. This includes:</p>
       <ul>
-        <li><strong>Names</strong> — collected during onboarding to personalise your experience</li>
         <li><strong>Payment data</strong> — handled and stored by <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat</a> and <a href="https://www.apple.com/legal/privacy" target="_blank">Apple</a>. We do not store payment card details.</li>
-        <li><strong>Photos</strong> — clothing images you capture are stored locally on your device only and are not transmitted to our servers</li>
+        <li><strong>Photos</strong> — clothing images you capture are stored locally on your device only and are not transmitted to our servers. Images may be sent to Anthropic's Claude API for clothing analysis; see Section 5 for details.</li>
       </ul>
 
       <h3>Information collected automatically</h3>
       <p>When you use Vestia, we may automatically collect:</p>
       <ul>
-        <li><strong>Geolocation data</strong> — used to fetch local weather for outfit suggestions. You can disable this in your device settings.</li>
+        <li><strong>Location</strong> — your approximate location is used in real time to fetch local weather for outfit suggestions and is not retained by us. You can disable location access in your device settings.</li>
         <li><strong>Device data</strong> — device model, OS version, and app identifiers collected by RevenueCat for subscription management</li>
-        <li><strong>Usage data</strong> — how you interact with the app, used to improve the experience</li>
+        <li><strong>Usage data</strong> — how you interact with the app, collected via Mixpanel analytics to improve the experience</li>
         <li><strong>Push notifications</strong> — we may send outfit reminders and trial notifications. You can opt out in your device settings.</li>
       </ul>
 
@@ -388,8 +377,9 @@
       <h2 id="whoshare">4. When and With Whom Do We Share Your Information?</h2>
       <p>We share personal information only with the following third parties:</p>
       <ul>
-        <li><strong>Anthropic</strong> — our AI service provider. Wardrobe item descriptions and images are sent to Anthropic's Claude API to generate outfit suggestions and clothing tags. View their <a href="https://www.anthropic.com/privacy" target="_blank">privacy policy</a>.</li>
+        <li><strong>Anthropic</strong> — our AI service provider. Wardrobe item descriptions and images are sent to Anthropic's Claude API to generate outfit suggestions and clothing tags. Anthropic retains API inputs for up to 7 days for trust and safety purposes and does not use them to train its models. View their <a href="https://www.anthropic.com/privacy" target="_blank">privacy policy</a>.</li>
         <li><strong>RevenueCat</strong> — our subscription and billing provider. View their <a href="https://www.revenuecat.com/privacy" target="_blank">privacy policy</a>.</li>
+        <li><strong>Mixpanel</strong> — our analytics provider. Anonymous usage data is collected to understand how users interact with the app. No personally identifiable information is shared. View their <a href="https://mixpanel.com/legal/privacy-policy/" target="_blank">privacy policy</a>.</li>
       </ul>
       <p>We may also share your information in the event of a business transfer such as a merger, acquisition, or sale of company assets.</p>
       <p>We do not sell or share your personal information for advertising purposes.</p>
@@ -406,15 +396,15 @@
       <p>You may opt out of AI features by not using outfit generation, tag generation, or the packing assistant. Core wardrobe management does not require AI processing.</p>
 
       <h2 id="intltransfers">6. Is Your Information Transferred Internationally?</h2>
-      <p>Our third-party service providers (Anthropic and RevenueCat) are based in the United States. By using Vestia, your information may be transferred to and processed in the United States.</p>
+      <p>Our third-party service providers (Anthropic, RevenueCat, and Mixpanel) are based in the United States. By using Vestia, your information may be transferred to and processed in the United States.</p>
       <p>For users in the EEA, UK, or Switzerland, we rely on the European Commission's Standard Contractual Clauses to ensure adequate protection for international data transfers. Details are available upon request.</p>
 
       <h2 id="inforetain">7. How Long Do We Keep Your Information?</h2>
-      <p>We retain your personal information for as long as your account is active. Wardrobe data, outfit logs, and preferences are stored locally on your device via Apple's SwiftData framework — we do not hold copies on our servers.</p>
-      <p>RevenueCat subscription data is retained as required for financial and legal compliance. Upon account deletion, we will remove or anonymise your data within 30 days.</p>
+      <p>Vestia does not require an account. Wardrobe data, outfit logs, and preferences are stored locally on your device via Apple's SwiftData framework — we do not hold copies on our servers.</p>
+      <p>RevenueCat subscription data is retained as required for financial and legal compliance. Upon request, we will remove or anonymise your data within 30 days.</p>
 
       <h2 id="infosafe">8. How Do We Keep Your Information Safe?</h2>
-      <p>We implement appropriate technical and organisational security measures to protect your personal information. Your wardrobe data is stored on-device and protected by your device's security (Face ID, Touch ID, passcode). Data transmitted to Anthropic and RevenueCat is sent over encrypted HTTPS connections.</p>
+      <p>We implement appropriate technical and organisational security measures to protect your personal information. Your wardrobe data is stored on-device and protected by your device's security (Face ID, Touch ID, passcode). Data transmitted to Anthropic, RevenueCat, and Mixpanel is sent over encrypted HTTPS connections.</p>
       <p>No electronic transmission is 100% secure. We cannot guarantee absolute security, but we take all reasonable steps to protect your data.</p>
 
       <h2 id="infominors">9. Do We Collect Information from Minors?</h2>
@@ -446,13 +436,13 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>A. Identifiers (name, device ID)</td><td><span class="badge-yes">Yes</span></td></tr>
-          <tr><td>B. California Customer Records (name)</td><td><span class="badge-yes">Yes</span></td></tr>
-          <tr><td>C. Protected characteristics (gender)</td><td><span class="badge-yes">Yes</span></td></tr>
+          <tr><td>A. Identifiers (anonymous device ID)</td><td><span class="badge-yes">Yes</span></td></tr>
+          <tr><td>B. California Customer Records (name)</td><td><span class="badge-no">No</span></td></tr>
+          <tr><td>C. Protected characteristics (gender)</td><td><span class="badge-no">No</span></td></tr>
           <tr><td>D. Commercial information</td><td><span class="badge-no">No</span></td></tr>
           <tr><td>E. Biometric information</td><td><span class="badge-no">No</span></td></tr>
           <tr><td>F. Internet/network activity</td><td><span class="badge-no">No</span></td></tr>
-          <tr><td>G. Geolocation data</td><td><span class="badge-yes">Yes</span></td></tr>
+          <tr><td>G. Geolocation data</td><td><span class="badge-no">No</span></td></tr>
           <tr><td>H. Audio/visual data</td><td><span class="badge-no">No</span></td></tr>
           <tr><td>I. Professional information</td><td><span class="badge-no">No</span></td></tr>
           <tr><td>J. Education information</td><td><span class="badge-no">No</span></td></tr>

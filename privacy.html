@@ -247,6 +247,14 @@
       letter-spacing: 0.06em;
     }
 
+    .badge-note {
+      display: inline-block;
+      font-size: 11px;
+      color: var(--text-secondary);
+      font-style: italic;
+      margin-left: 8px;
+    }
+
     .contact-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -303,7 +311,7 @@
   <div class="hero">
     <p class="hero-label">Legal</p>
     <h1>Privacy Policy</h1>
-    <p class="hero-date">Last updated: April 30, 2026</p>
+    <p class="hero-date">Last updated: May 19, 2026</p>
   </div>
 
   <div class="content-wrap">
@@ -442,8 +450,8 @@
           <tr><td>D. Commercial information</td><td><span class="badge-no">No</span></td></tr>
           <tr><td>E. Biometric information</td><td><span class="badge-no">No</span></td></tr>
           <tr><td>F. Internet/network activity</td><td><span class="badge-no">No</span></td></tr>
-          <tr><td>G. Geolocation data</td><td><span class="badge-no">No</span></td></tr>
-          <tr><td>H. Audio/visual data</td><td><span class="badge-no">No</span></td></tr>
+          <tr><td>G. Geolocation data</td><td><span class="badge-yes">Yes</span><span class="badge-note">used transiently for weather only, not retained</span></td></tr>
+          <tr><td>H. Audio/visual data</td><td><span class="badge-yes">Yes</span><span class="badge-note">clothing photos processed via Anthropic's API, not stored on our servers</span></td></tr>
           <tr><td>I. Professional information</td><td><span class="badge-no">No</span></td></tr>
           <tr><td>J. Education information</td><td><span class="badge-no">No</span></td></tr>
           <tr><td>K. Inferences / profiling</td><td><span class="badge-no">No</span></td></tr>
